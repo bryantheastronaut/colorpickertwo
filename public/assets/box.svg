@@ -1,0 +1,19 @@
+<svg width="1116px" height="691px" viewBox="264 120 1116 691" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M266,163.002163 C266,140.357294 284.347551,122 307.001375,122 L1331.99862,122 C1354.64306,122 1373,140.361878 1373,163.002163 L1373,602.835761 C1373,625.48063 1354.6415,643.837924 1332.0096,643.837924 L1075.04311,643.837924 C1052.40474,643.837924 1016.99635,650.618935 995.947258,658.987316 C995.947258,658.987316 629.976455,804.484483 629.976455,804.484483 L870.97271,664.439103 C890.551986,653.061386 888.076342,643.837924 865.419086,643.837924 L307.00504,643.837924 C284.358582,643.837924 266,625.476046 266,602.835761 L266,163.002163 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1107" height="682.484483" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Rectangle-1" stroke="none" fill="none">
+        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+        <use stroke-opacity="0.212664176" stroke="#421E1E" mask="url(#mask-3)" stroke-width="4" fill="#FCFBFB" fill-rule="evenodd" xlink:href="#path-1"></use>
+    </g>
+</svg>
