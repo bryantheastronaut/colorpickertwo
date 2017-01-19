@@ -7,7 +7,7 @@ class ColorContainer extends Component {
     super(props);
     this.state = {
       isOpen: true,
-      swatches: false,
+      swatches: true,
       primaryColor: '',
       secondaryColor: '',
       colors: {
