@@ -1,5 +1,7 @@
 import React from 'react';
 import {Header} from './Header';
+import {SetColorButtons} from './SetColorButtons';
+import {RGBHex} from './RGBHex';
 import {ColorSwatches} from './ColorSwatches';
 
 export const ColorPicker = props => {
@@ -24,9 +26,15 @@ export const ColorPicker = props => {
         { (props.swatches)
             ? <ColorSwatches
                 presets={props.presets}
+                currentColor={props.currentColor}
                 onSelectColor={props.onSelectColor}/>
-            : null
+            : <RGBHex
+                onSelectColor={props.onSelectColor}
+                onChangeValue={props.onChangeValue}
+                currentColor={props.currentColor}
+                colors={props.colors} />
         }
+        <SetColorButtons onSetColor={props.onSetColor}/>
     </div>
   )
 }

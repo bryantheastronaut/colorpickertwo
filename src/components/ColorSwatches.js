@@ -7,8 +7,8 @@ export const ColorSwatches = props => {
       display: 'flex',
       flexFlow: 'row wrap',
       position: 'relative',
-      top: '-485px',
-      left: '165px',
+      top: '-460px',
+      left: '195px',
       width: '700px'
     },
     swatch: {
@@ -25,6 +25,16 @@ export const ColorSwatches = props => {
       position: 'relative',
       left: '45px',
       top: '-20px'
+    },
+    currentColorBar: {
+      width: '400px',
+      height: '5px',
+      margin: '0 auto',
+      borderRadius: '5px',
+      position: 'relative',
+      top: '-30px',
+      left: '-20px',
+      backgroundColor: props.currentColor
     }
   }
   let {presets} = props;
@@ -52,8 +62,10 @@ export const ColorSwatches = props => {
   });
   return (
     <div style={style.container}>
+      <div style={style.currentColorBar} />
       <div style={style.row1}>{swatches1}</div>
       <div style={style.row2}>{swatches2}</div>
+
     </div>
   )
 }
